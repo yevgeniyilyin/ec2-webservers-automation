@@ -9,7 +9,9 @@ TAG_VALUE="`aws ec2 describe-tags --filters "Name=resource-id,Values=$INSTANCE_I
 
 cd /var/www/html
 
-sudo wget https://github.com/linuxacademy/content-aws-csa2019/raw/master/lesson_files/07_hybrid_scaling/1_LBandASG/CLBandHealth/$TAG_VALUE.jpg
+https://github.com/yevgeniyilyin/ec2-webservers-automation/blob/master/images/cat1.jpg
+
+sudo wget https://github.com/yevgeniyilyin/ec2-webservers-automation/blob/master/images/$TAG_VALUE.jpg
 sudo wget https://github.com/linuxacademy/content-aws-csa2019/raw/master/lesson_files/07_hybrid_scaling/1_LBandASG/CLBandHealth/index.php
 sudo wget https://github.com/linuxacademy/content-aws-csa2019/raw/master/lesson_files/07_hybrid_scaling/1_LBandASG/CLBandHealth/htaccess
 sudo mv $TAG_VALUE.jpg cat.jpg
