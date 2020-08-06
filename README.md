@@ -9,7 +9,7 @@ TBD
 ## Usage
 
 Create a EC2 Instance:
-- Copy/paste the user data script from /user-data/user-data.sh
+- Copy/paste the user data script from [user-data.sh](/user-data/user-data.sh)
 - Create an IAM Role with the following policy:
 
 ```
