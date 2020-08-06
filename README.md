@@ -30,6 +30,6 @@ Create a EC2 Instance:
   }
 ```
 - Attache the IAM Role to EC2 Instance
-- Create a tag with Name="Cat" and Value any of {cat1, cat2, cat3, cat4, cat5}
+- Create a tag with Name="Picture" and Value any of {cat1, cat2, cat3, cat4, cat5}
 
 Launch the EC2 Instance
