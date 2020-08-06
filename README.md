@@ -1,6 +1,6 @@
 # EC2 Web Server Automation
 
-Creating Fun web server for experiments in EC2
+Creating Fun web servers for experiments in EC2
 
 ## Installation
 
@@ -29,5 +29,7 @@ Create a EC2 Instance:
     ]
   }
 ```
-
+- Attache the IAM Role to EC2 Instance
 - Create a tag with Name="Cat" and Value any of {cat1, cat2, cat3, cat4, cat5}
+
+Launch the EC2 Instance
