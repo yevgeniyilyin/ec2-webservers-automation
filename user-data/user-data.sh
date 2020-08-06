@@ -9,18 +9,19 @@ TAG_VALUE="`aws ec2 describe-tags --filters "Name=resource-id,Values=$INSTANCE_I
 
 cd /var/www/html
 
-https://github.com/yevgeniyilyin/ec2-webservers-automation/blob/master/images/cat1.jpg
+rm cat.jpg
+rm index.html
 
-sudo wget https://github.com/yevgeniyilyin/ec2-webservers-automation/blob/master/images/$TAG_VALUE.jpg
-sudo wget https://github.com/linuxacademy/content-aws-csa2019/raw/master/lesson_files/07_hybrid_scaling/1_LBandASG/CLBandHealth/index.php
-sudo wget https://github.com/linuxacademy/content-aws-csa2019/raw/master/lesson_files/07_hybrid_scaling/1_LBandASG/CLBandHealth/htaccess
-sudo mv $TAG_VALUE.jpg cat.jpg
-sudo mv /var/www/html/htaccess /var/www/html/.htaccess
+wget https://raw.githubusercontent.com/yevgeniyilyin/ec2-webservers-automation/master/images/$TAG_VALUE.jpg
+wget https://raw.githubusercontent.com/yevgeniyilyin/ec2-webservers-automation/master/httpd/index.php
+wget https://raw.githubusercontent.com/yevgeniyilyin/ec2-webservers-automation/master/httpd/htaccess
+mv $TAG_VALUE.jpg cat.jpg
+mv /var/www/html/htaccess /var/www/html/.htaccess
 
-sudo mkdir /var/www/html/cat
-sudo cp /var/www/html/cat.jpg /var/www/html/cat
-sudo cp /var/www/html/index.php /var/www/html/cat
-sudo cp /var/www/html/.htaccess /var/www/html/cat
+mkdir /var/www/html/cat
+cp /var/www/html/cat.jpg /var/www/html/cat
+cp /var/www/html/index.php /var/www/html/cat
+cp /var/www/html/.htaccess /var/www/html/cat
 
 sudo systemctl start httpd
 sudo systemctl enable httpd
