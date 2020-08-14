@@ -11,6 +11,8 @@ cd /var/www/html
 
 rm pic.jpg
 rm index.html
+rm index.php
+rm .htaccess
 
 wget https://raw.githubusercontent.com/yevgeniyilyin/ec2-webservers-automation/master/images/$TAG_VALUE.jpg
 wget https://raw.githubusercontent.com/yevgeniyilyin/ec2-webservers-automation/master/httpd/index.php
